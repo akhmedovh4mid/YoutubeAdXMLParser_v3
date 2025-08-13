@@ -1,0 +1,28 @@
+{
+    "276bcca9": {
+        "TR": {
+            "start_time": "00:00",
+            "end_time": "00:30"
+        },
+        "EN": {
+            "start_time": "00:30",
+            "end_time": "01:00"
+        },
+        "RU": {
+            "start_time": "01:00",
+            "end_time": "01:30"
+        },
+        "ES": {
+            "start_time": "01:30",
+            "end_time": "02:00"
+        },
+        "PT": {
+            "start_time": "02:00",
+            "end_time": "02:30"
+        },
+        "ZH": {
+            "start_time": "02:30",
+            "end_time": "03:00"
+        }
+    }
+}
