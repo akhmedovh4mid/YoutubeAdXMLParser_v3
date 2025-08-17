@@ -71,8 +71,8 @@ class AdParser:
             ad_block_coords.bounds[2], ad_block_coords.bounds[3]
         )
         
-        sponsored_text = Tesseract.find_matches_by_word(lang=self.lang, image=ad_text_block, target_word="Sponsored", scale=2)
-        ad_text_block = ad_text_block.crop(box=(0, 0, ad_text_block.width, sponsored_text.top + sponsored_text.height))
+        # sponsored_text = Tesseract.find_matches_by_word(lang=self.lang, image=ad_text_block, target_word="Sponsored", scale=2)
+        # ad_text_block = ad_text_block.crop(box=(0, 0, ad_text_block.width, sponsored_text.top + sponsored_text.height))
 
         content_block_coords = self.content_handler.get_content_block_coords()
         if image_node_coords.bounds[1] <= content_block_coords.bounds[1]:

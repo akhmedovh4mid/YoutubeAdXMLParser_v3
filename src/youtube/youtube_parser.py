@@ -184,7 +184,7 @@ class YoutubeParser:
         
         self._parse_and_save_ad()
         
-        self._swipe_to_next_content(swipes=2)
+        self._swipe_to_next_content(swipes=3)
         
     def _parse_and_save_ad(self) -> None:
         result = self.ad_parser.parse_ad()
