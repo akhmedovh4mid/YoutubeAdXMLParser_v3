@@ -150,7 +150,7 @@ class YoutubeParser:
         while self._running and swipe_count < ParserConfig.max_swipe_count:
             try:
                 if self._process_ad_block():
-                    swipe_count = 2
+                    swipe_count = 3
                 else:
                     swipe_count += 1
                     self._swipe_to_next_content()
@@ -207,7 +207,7 @@ class YoutubeParser:
 
     def _is_same_content(self, img1, img2) -> bool:
         match = ImageUtils.compare_images(img1, img2)
-        logger.debug(f"[{self.device.serial}] - Схожесть скриншотов: {match}%")
+        logger.info(f"[{self.device.serial}] - Схожесть скриншотов: {match}%")
         return match >= ParserConfig.screenshot_similarity_threshold
 
 
