@@ -6,7 +6,7 @@ class ParserConfig:
     offset: int = 25
     max_swipe_count: int = 9
     max_consecutive_ads: int = 3
-    screenshot_similarity_threshold: int = 70
+    screenshot_similarity_threshold: int = 60
 
     ad_wait_timeout: float = 5
     action_timeout: float = 0.25
